@@ -25,7 +25,7 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+ const metadata: Metadata = {
   title: "Gold&Pink",
   description: "describe about gold and pink app",
 };
