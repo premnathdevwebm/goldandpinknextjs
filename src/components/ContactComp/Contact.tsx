@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Contact.module.css";
 
 import icon1 from "./iconfa1.png";
@@ -14,13 +15,13 @@ const SocialMedia = () => {
   return (
     <div className={styles.socialicons}>
       <a href="https://www.facebook.com">
-        <img {...icon1} alt="Facebook" style={iconStyle} />
+        <Image {...icon1} alt="Facebook" style={iconStyle} />
       </a>
       <a href="https://www.instagram.com">
-        <img {...icon2} alt="Instagram" style={iconStyle} />
+        <Image {...icon2} alt="Instagram" style={iconStyle} />
       </a>
       <a href="https://www.twitter.com">
-        <img {...icon3} alt="Twitter" style={iconStyle} />
+        <Image {...icon3} alt="Twitter" style={iconStyle} />
       </a>
     </div>
   );
@@ -31,7 +32,7 @@ const ContactComp = () => {
     <div className={styles.container}>
       <h2>Get in touch with us and book your appointments!</h2>
       <section className={styles.innercontainer}>
-        <h3>Let's Chat</h3>
+        <h3>Let&lsquo;s Chat</h3>
         <div className={styles.row}>
           <div className={styles.col}>
             <div>Phone</div>
@@ -49,18 +50,18 @@ const ContactComp = () => {
         <div>
           <form>
             <div className={styles.inputgroup}>
-            <div className={styles.inputfield}>
-              <label htmlFor="firstname">First Name </label>
-              <input type="text" id="firstname" required />
-            </div>
-            <div className={styles.inputfield}>
-            <label htmlFor="lastname">Last Name </label>
-            <input type="text" id="lastname" required />
-            </div>
-            <div className={styles.inputfield}>
-            <label htmlFor="email">Email *</label>
-            <input type="email" id="email" required />
-            </div>
+              <div className={styles.inputfield}>
+                <label htmlFor="firstname">First Name </label>
+                <input type="text" id="firstname" required />
+              </div>
+              <div className={styles.inputfield}>
+                <label htmlFor="lastname">Last Name </label>
+                <input type="text" id="lastname" required />
+              </div>
+              <div className={styles.inputfield}>
+                <label htmlFor="email">Email *</label>
+                <input type="email" id="email" required />
+              </div>
             </div>
             <label htmlFor="Message">Message </label>
             <textarea id="Message" required />
@@ -72,4 +73,4 @@ const ContactComp = () => {
   );
 };
 
-export { ContactComp};
+export { ContactComp };

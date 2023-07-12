@@ -13,11 +13,9 @@ const Chatbot: React.FC = () => {
   const [showChatbox, setShowChatbox] = useState(false);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
 
-  const handleSendMessage = (
-    e: React.FormEvent<HTMLFormElement>
-  ): void => {
+  const handleSendMessage = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    const userInput:any = (e.currentTarget.elements);
+    const userInput: any = e.currentTarget.elements;
 
     const chatMessage: ChatMessage = { sender: "user", message: userInput };
     setChatMessages([...chatMessages, chatMessage]);
@@ -32,13 +30,13 @@ const Chatbot: React.FC = () => {
           onClick={() => setShowChatbox(true)}
         >
           <Image src={logo} alt="Button Icon" className={styles.buttonicon} />
-          <span className={styles.buttontext}>Let's Chat</span>
+          <span className={styles.buttontext}>Let&lsquo;s Chat</span>
         </button>
       ) : (
         <div className={styles.chatbox}>
           <div className={styles.chatboxheader}>
             <Image src={logo} alt="Button Icon" className={styles.buttonicon} />
-            <span className={styles.buttontext}>Let's Chat</span>
+            <span className={styles.buttontext}>Let&lsquo;s Chat</span>
             <button
               className={styles.closebutton}
               onClick={() => setShowChatbox(false)}
@@ -78,4 +76,4 @@ const Chatbot: React.FC = () => {
   );
 };
 
-export {Chatbot};
+export { Chatbot };

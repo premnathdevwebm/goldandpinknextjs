@@ -6,9 +6,7 @@ import { CartActionTypes } from "@/store/cart/actionstate";
 export default function CartPage() {
   const { cartState, cartDispatch } = useCart();
 
-  const handleRemoveItem = (product: any) => {
-    console.log("removing Product", product);
-    
+  const handleRemoveItem = (product: any) => { 
     cartDispatch({
       type: CartActionTypes.REMOVE_FROM_CART,
       payload: product,
@@ -16,7 +14,6 @@ export default function CartPage() {
   };
 
   const handleQuantityChange = (product: any, quantity: number) => {
-    console.log("MODIFY", product, quantity);
   };
 
   return (
