@@ -1,0 +1,38 @@
+.parcontain {
+    /* Styles for the parent container div */
+    width: 70%;
+    margin: auto;
+    height: 90vh;
+    padding-top: 20vh;
+  }
+  
+  .container {
+    /* Styles for the individual containers */
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    /* Styles for the row div */
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .imag {
+    /* Styles for the image div */
+    width: 400px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .imag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .title{
+    font-weight: 700;
+  }

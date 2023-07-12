@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  min-height: 80vh;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.container h2 {
+  margin-top: 0;
+}
+
+.container img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container p {
+  margin: 10px 0;
+}
+
+.container button {
+  padding: 10px 20px;
+  background-color: #f2668f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #fff;
+  color: #f2668f;
+}

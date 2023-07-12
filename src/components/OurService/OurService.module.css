@@ -1,0 +1,49 @@
+.heading {
+  font-size: 2rem;
+  margin: 0 auto 0.8rem;
+  width: 40%;
+}
+.gridcontainer {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.griditem {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.title {
+  font-style: italic;
+}
+.titlecontent {
+  height: 3em;
+}
+.view {
+  display: inline-block;
+  width: 190px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.view:hover {
+  filter: grayscale(100%);
+  background-color: #fff;
+  color: #333;
+  border: 1px solid black;
+}
+@media (max-width: 700px) {
+  .gridcontainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+}

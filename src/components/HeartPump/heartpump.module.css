@@ -1,0 +1,50 @@
+@keyframes fly-in {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(calc(-50% + 175px));
+    }
+  }
+  
+  @keyframes pumping {
+    0%,
+    100% {
+      transform: translateX(calc(-50% + 175px)) scale(1);
+    }
+    50% {
+      transform: translateX(calc(-50% + 175px)) scale(1.1);
+    }
+  }
+  
+  .gridcontainer {
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-image: url("../../../public/back.jpg");
+    background-repeat: repeat;
+  }
+  
+  .fullwidthColumn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .heart {
+    max-height: 100%;
+    justify-self: center;
+    align-self: center; 
+    border-radius: 50%;
+    animation: fly-in 1s ease-in-out forwards;
+  }
+  
+  .heart.pumping {
+    animation: pumping 2s ease-in-out infinite;
+  }
+  
