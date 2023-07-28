@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef  } from "react";
 import Image from "next/image";
 import styles from "./Chatbot.module.css";
 import logo from "./logo.png";
+import { handleSendMessage } from "@/utils/wtiai";
 
 interface ChatMessage {
   sender: string;
@@ -12,14 +13,23 @@ interface ChatMessage {
 const Chatbot: React.FC = () => {
   const [showChatbox, setShowChatbox] = useState(false);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const handleSendMessage = (e: React.FormEvent<HTMLFormElement>): void => {
+  const handleSendMessageData = async (userInput: string) => {
+    const botResponse = await handleSendMessage(userInput);
+    const userMessage: ChatMessage = { sender: "user", message: userInput };
+    const botMessage: ChatMessage = { sender: "bot", message: botResponse };
+    setChatMessages((prevMessages) => [...prevMessages, userMessage, botMessage]);
+    inputRef.current?.focus();
+    inputRef.current!.value = "";
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
-    const userInput: any = e.currentTarget.elements;
-
-    const chatMessage: ChatMessage = { sender: "user", message: userInput };
-    setChatMessages([...chatMessages, chatMessage]);
-    e.currentTarget.reset();
+    if(inputRef.current?.value){
+      await handleSendMessageData(inputRef.current?.value)
+    }
+    
   };
 
   return (
@@ -45,26 +55,19 @@ const Chatbot: React.FC = () => {
             </button>
           </div>
           <div className={styles.chatboxcontent}>
-            {/* Render the chat messages */}
-            {chatMessages.map((message, index) => (
-              <div
-                key={index}
-                className={
-                  message.sender === "user"
-                    ? styles.usermessage
-                    : styles.botmessage
-                }
-              >
-                {message.message}
+          {chatMessages && chatMessages.map((message, index) => (
+              <div key={index} className={styles.chatMessage}>
+                <span className={styles[message.sender]}>{message.message}</span>
               </div>
             ))}
           </div>
-          <form className={styles.chatboxform} onSubmit={handleSendMessage}>
+          <form className={styles.chatboxform} onSubmit={handleSubmit}>
             <input
               type="text"
               name="message"
               placeholder="Type your message..."
               className={styles.messageinput}
+              ref={inputRef}
             />
             <button type="submit" className={styles.sendbutton}>
               Send
