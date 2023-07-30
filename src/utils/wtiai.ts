@@ -4,7 +4,6 @@ import axios from "axios";
 const WIT_API_ACCESS_TOKEN: string | undefined = process.env.NEXT_WIT_API_ACCESS_TOKEN;
 
 export const handleSendMessage = async (userInput: string): Promise<string> => {
-  console.log(WIT_API_ACCESS_TOKEN);
   
   if(WIT_API_ACCESS_TOKEN){
   try {
