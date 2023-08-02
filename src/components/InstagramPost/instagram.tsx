@@ -61,10 +61,10 @@ const InstagramGrid = async () => {
       caption: "Follow Us On",
       subcaption: "INSTA-GRAM!",
     },
-    { id: 2, imageUrl: data[0]?.media_url ?? "", caption: "", subcaption: "" },
-    { id: 3, imageUrl: data[1]?.media_url ?? "", caption: "", subcaption: "" },
-    { id: 4, imageUrl: data[2]?.media_url ?? "", caption: "", subcaption: "" },
-    { id: 5, imageUrl: data[3]?.media_url ?? "", caption: "", subcaption: "" },
+    { id: 2, imageUrl: data[1]?.media_url ?? "", caption: "", subcaption: "" },
+    { id: 3, imageUrl: data[2]?.media_url ?? "", caption: "", subcaption: "" },
+    { id: 4, imageUrl: data[3]?.media_url ?? "", caption: "", subcaption: "" },
+    { id: 5, imageUrl: data[4]?.media_url ?? "", caption: "", subcaption: "" },
     { id: 6, imageUrl: "", caption: "/ Get In Touch", subcaption: "" },
   ];
 
