@@ -152,6 +152,54 @@ export const Navbar = () => {
                   PRODUCTS
                 </Text>
               </Link>
+              <Menu>
+                <MenuButton>
+                  <Text fontWeight={"700"} color={"#FFF"}>
+                    MORE
+                  </Text>
+                </MenuButton>
+                <MenuList
+                  display={"inline-block"}
+                  backgroundColor={"#F7ADC0"}
+                  position={"relative"}
+                  zIndex={1}
+                >
+                  <MenuItem backgroundColor={"#F7ADC0"}>
+                    <Link
+                      href="/gallery"
+                      onClick={() => setIsDrawerOpen(false)}
+                    >
+                      <Text
+                        fontWeight={"700"}
+                        color={
+                          pathname.split("/")[1] === "gallery"
+                            ? "#D6EE4A"
+                            : "#FFF"
+                        }
+                      >
+                        GALLERY
+                      </Text>
+                    </Link>
+                  </MenuItem>
+                  <MenuItem backgroundColor={"#F7ADC0"}>
+                    <Link
+                      href="/contact"
+                      onClick={() => setIsDrawerOpen(false)}
+                    >
+                      <Text
+                        fontWeight={"700"}
+                        color={
+                          pathname.split("/")[1] === "contact"
+                            ? "#D6EE4A"
+                            : "#FFF"
+                        }
+                      >
+                        CONTACT
+                      </Text>
+                    </Link>
+                  </MenuItem>
+                </MenuList>
+              </Menu>
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
