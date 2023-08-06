@@ -21,7 +21,6 @@ const TestimonialCarousel = () => {
 
   return (
       <div className={styles.content}>
-        <h2 className={styles.title}>TESTIMONIALS</h2>
         <div className={styles.caroselcontent}>
         <Carousel interval={3000} autoPlay infiniteLoop showThumbs={false}>
           {testimonials.map((testimonial) => (

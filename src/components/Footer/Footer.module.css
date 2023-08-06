@@ -11,6 +11,9 @@
   padding: 20px;
   border-radius: 4px;
 }
+.griditem p{
+  color: white;
+}
 
 @media (min-width: 768px) {
   .gridfooter {
