@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100;
+}
+.formcont {
+    background: #ffffff; 
+    padding: 30px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.formcont label {
+    display: block; 
+    margin-bottom: 10px; 
+    font-weight: 600; 
+}
+
+.formcont input[type="text"],
+.formcont input[type="date"],
+.formcont input[type="time"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #e1e1e1; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+.formcont button {
+    padding: 10px 20px; 
+    background-color: #C8AC24; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.2s; 
+}
+
+.formcont button:hover {
+    background-color: #DEAC24;
+}

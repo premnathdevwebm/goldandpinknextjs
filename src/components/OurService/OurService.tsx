@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './OurService.module.css';
 const OurService = () => {
     const services = [
@@ -20,7 +21,7 @@ const OurService = () => {
             <div key={service.id} className={styles.griditem}>
               <h3 className={styles.title}>{service.title.split(".")[0]}{" "}/</h3>
               <h2 className={styles.titlecontent}>{service.title.split(".")[1]}</h2>
-              <p className={styles.view}>{service.description}</p>
+              <Link href={`/service/${service.id}`}> <p className={styles.view}>{service.description}</p></Link>
             </div>
           ))}
         </div>
