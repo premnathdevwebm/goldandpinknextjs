@@ -45,7 +45,7 @@
   .gridcontainer {
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(5, 1fr);
-    margin: auto 0;
+    margin: 0 auto;
   }
   .view{
     width: 160px;
