@@ -26,3 +26,14 @@
     linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px) {
+  .content {
+    background-image: url("./smalltestimonial.png");
+  }
+  .title {
+    width: 60%;
+  }
+  .caroselcontent {
+    width: 60%;
+  }
+}
