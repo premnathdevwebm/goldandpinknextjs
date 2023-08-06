@@ -42,9 +42,10 @@ export const Navbar = () => {
       {/* Hamburger Menu Icon (Mobile View) */}
       <Box
         display={{ base: "flex", md: "none" }}
-        justifyContent="space-between"
+        justifyContent="center"
         alignItems="center"
         mb={4}
+        position="relative"
       >
         <Link href="/">
           <Image width={70} height={30} src="/logo.png" alt="Logo" priority />
@@ -54,6 +55,10 @@ export const Navbar = () => {
           onClick={() => setIsDrawerOpen(true)}
           backgroundColor={"#F2668F"}
           aria-label="Open menu"
+          position="absolute"
+          right={0}
+          top="50%"
+          transform="translateY(-50%)"
         />
       </Box>
 
