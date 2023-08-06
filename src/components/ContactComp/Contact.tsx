@@ -13,7 +13,7 @@ const SocialMedia = () => {
   };
 
   return (
-    <div className={styles.socialicons}>
+    <div className={styles["social-media"]}>
       <a href="https://www.facebook.com">
         <Image {...icon1} alt="Facebook" style={iconStyle} />
       </a>
@@ -63,9 +63,9 @@ const ContactComp = () => {
                 <input type="email" id="email" required />
               </div>
             </div>
-            <label htmlFor="Message">Message </label>
-            <textarea id="Message" required />
-            <button type="submit">Send</button>
+            <label className={styles.messagelabel} htmlFor="Message">Message </label>
+            <textarea className={styles.message} id="Message" required />
+            <button className={styles.sendbutton} type="submit">Send</button>
           </form>
         </div>
       </section>
