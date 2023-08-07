@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from "./LashComp.module.css";
 import image1 from "./comp1.webp";
 import image2 from "./comp2.webp";
+import Image from 'next/image';
 const comps = [
   {
     id: 10,
@@ -26,7 +27,7 @@ const LashComponent = () => {
         <div key={ele.id} className={styles.container}>
           <div className={styles.row}>
             <div className={styles.imag}>
-              <img
+              <Image
                 {...ele.image}
                 alt="lash"
               />
@@ -36,7 +37,7 @@ const LashComponent = () => {
               <p>{ele.content}</p>
             </div>
           </div>
-          <Link href={`/service/${service.id}`}>Book Now</Link>
+          <Link href={`/service/${comps.id}`}>Book Now</Link>
         </div>
       ))}
     </div>
