@@ -17,9 +17,7 @@ const Footer = () => {
       </div>
       <div className={styles.griditem}>
         <h3>Opening Hours</h3>
-        <p>Monday-Friday: 9am-6pm</p>
-        <p>Saturday: 10am-4pm</p>
-        <p>Sunday: Closed</p>
+        <p>Monday to Sunday: 11am - 7pm</p>
       </div>
     </div>
   );

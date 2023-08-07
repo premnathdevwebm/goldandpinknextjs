@@ -18,6 +18,8 @@ export default function Page({ params }: { params: { id: string } }) {
     services.find((service) => service.id === params.id)?.title ?? "Not Found";
 
   const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
   const [service] = useState(data);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -35,7 +37,24 @@ export default function Page({ params }: { params: { id: string } }) {
             required
           />
         </div>
-
+        <div>
+          <label>Contact:</label>
+          <input
+            type="text"
+            value={number}
+            onChange={(e) => setNumber(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
         <div>
           <label>Service needed:</label>
           <input type="text" value={service} readOnly />

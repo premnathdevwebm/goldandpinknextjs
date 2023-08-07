@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <HeartPump />
       <MainContent />
-      <TestimonialCarousel />
+      {/* <TestimonialCarousel /> */}
       <OurService />
       <InstagramGrid />
       <VerticalSocialSide />
