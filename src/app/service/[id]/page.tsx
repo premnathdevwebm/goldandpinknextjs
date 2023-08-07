@@ -2,15 +2,17 @@
 import { useState } from "react";
 import styles from "./service.module.css"
 const services = [
-  { id: "1", title: "Mani Pedi", description: "View More" },
-  { id: "2", title: "Nail Bar", description: "View More" },
-  { id: "3", title: "Lashes", description: "View More" },
-  { id: "4", title: "Hydra Facial", description: "View More" },
-  { id: "5", title: "Laser Hair Removal", description: "View More" },
-  { id: "6", title: "Acne Treatment", description: "View More" },
-  { id: "7", title: "Botox", description: "View More" },
-  { id: "8", title: "Fillers", description: "View More" },
-  { id: "9", title: "Glutathione Infusion", description: "View More" },
+  { id: "1", title: "Mani Pedi"},
+  { id: "2", title: "Nail Bar" },
+  { id: "3", title: "Lashes" },
+  { id: "4", title: "Hydra Facial" },
+  { id: "5", title: "Laser Hair Removal" },
+  { id: "6", title: "Acne Treatment" },
+  { id: "7", title: "Botox"},
+  { id: "8", title: "Fillers" },
+  { id: "9", title: "Glutathione Infusion" },
+  { id: "10", title: "Lash extensions"},
+  { id: "11", title: "Lash lift"},
 ];
 
 export default function Page({ params }: { params: { id: string } }) {
