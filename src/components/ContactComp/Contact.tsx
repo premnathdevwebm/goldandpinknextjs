@@ -36,8 +36,12 @@ const ContactComp = () => {
         <div className={styles.row}>
           <div className={styles.col}>
             <div>Phone</div>
-            <p>+91 98886 34443</p>
-            <p>+91 98882 14441</p>
+            <p>
+              <a href="tel:+91 98886 34443">+91 98886 34443</a>
+            </p>
+            <p>
+              <a href="tel:+91 98882 14441">+91 98882 14441</a>
+            </p>
           </div>
           <div className={styles.col}>
             <div>Email</div>
