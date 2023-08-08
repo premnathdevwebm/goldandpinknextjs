@@ -13,6 +13,13 @@ const services = [
   { id: "9", title: "Glutathione Infusion" },
   { id: "10", title: "Lash extensions"},
   { id: "11", title: "Lash lift"},
+  { id: "12", title: "Lash lift"},
+  { id: "13", title: "Lash lift"},
+  { id: "14", title: "Lash lift"},
+  { id: "15", title: "Lash lift"},
+  { id: "16", title: "Lash lift"},
+  { id: "17", title: "Lash lift"},
+  { id: "18", title: "Lash lift"},
 ];
 
 export default function Page({ params }: { params: { id: string } }) {

@@ -37,6 +37,30 @@
   font-weight: 700;
 }
 
+.bookNowButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EE56b3; /* Change to your preferred color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px; /* Space above the button */
+  text-decoration: none;
+}
+
+.bookNowButton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bookNowButton:hover {
+  background-color: #CE56b3; 
+}
+
+
 @media (min-width: 768px) {
   .parcontain {
     /* Styles for the parent container div for larger screens */

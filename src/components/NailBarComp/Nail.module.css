@@ -2,20 +2,18 @@
   /* Styles for the parent container div */
   width: 90%;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .container {
-  /* Styles for the individual containers */
   display: flex;
   flex-direction: column;
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
 .row {
-  /* Styles for the row div */
   display: flex;
   flex-direction: column;
 }
@@ -36,6 +34,30 @@
 .title {
   font-weight: 700;
 }
+
+.bookNowButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EE56b3; /* Change to your preferred color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px; /* Space above the button */
+  text-decoration: none;
+}
+
+.bookNowButton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bookNowButton:hover {
+  background-color: #CE56b3; 
+}
+
 
 @media (min-width: 768px) {
   .parcontain {
