@@ -23,7 +23,7 @@ const comps = [
   },
   {
     id: "17",
-    name: "Poly Gel extensions ",
+    name: "Poly Gel extensions",
     content:
       "Polygel nail extensions are a nail enhancement that is more flexible and lightweight compared to acrylic but is harder than regular gel or Gel-X nails",
       image: image3

@@ -14,12 +14,12 @@ const services = [
   { id: "10", title: "Lash extensions"},
   { id: "11", title: "Lash lift"},
   { id: "12", title: "Lash lift"},
-  { id: "13", title: "Lash lift"},
-  { id: "14", title: "Lash lift"},
-  { id: "15", title: "Lash lift"},
-  { id: "16", title: "Lash lift"},
-  { id: "17", title: "Lash lift"},
-  { id: "18", title: "Lash lift"},
+  { id: "13", title: "Manicure"},
+  { id: "14", title: "Pedicure"},
+  { id: "15", title: "Acrylic extensions"},
+  { id: "16", title: "Gel extensions"},
+  { id: "17", title: "Poly Gel extensions"},
+  { id: "18", title: "Nail art"},
 ];
 
 export default function Page({ params }: { params: { id: string } }) {
