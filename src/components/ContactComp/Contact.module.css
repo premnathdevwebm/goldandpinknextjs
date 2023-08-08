@@ -22,16 +22,12 @@
 
 .row {
   display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
-.col {
-  flex: 1;
-  margin-right: 10px;
-}
-
-.col:last-child {
-  margin-right: 0;
+.col{
+  margin-bottom: 20px;
 }
 
 .innercontainer > h3 {

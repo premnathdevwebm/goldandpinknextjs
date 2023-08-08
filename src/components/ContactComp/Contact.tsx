@@ -36,15 +36,12 @@ const ContactComp = () => {
         <div className={styles.row}>
           <div className={styles.col}>
             <div>Phone</div>
-            <div>123-456-7890</div>
+            <p>+91 98886 34443</p>
+            <p>+91 98882 14441</p>
           </div>
           <div className={styles.col}>
             <div>Email</div>
-            <div>info@mysite.com</div>
-          </div>
-          <div className={styles.col}>
-            <div>Social Media</div>
-            <SocialMedia />
+            <div>goldandpinkneelankarai@gmail.com</div>
           </div>
         </div>
         <div>
@@ -63,9 +60,13 @@ const ContactComp = () => {
                 <input type="email" id="email" required />
               </div>
             </div>
-            <label className={styles.messagelabel} htmlFor="Message">Message </label>
+            <label className={styles.messagelabel} htmlFor="Message">
+              Message{" "}
+            </label>
             <textarea className={styles.message} id="Message" required />
-            <button className={styles.sendbutton} type="submit">Send</button>
+            <button className={styles.sendbutton} type="submit">
+              Send
+            </button>
           </form>
         </div>
       </section>
