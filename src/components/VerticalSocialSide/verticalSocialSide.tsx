@@ -21,10 +21,10 @@ const VerticalSocialSide = () => {
       flexDirection={"column"}
       alignItems={"center"}
     >
-        <Link href="https://www.facebook.com" isExternal>
+        <Link href="https://www.instagram.com" isExternal>
           <Image src={icon1} alt="Facebook" style={iconStyle} />
         </Link>
-        <Link href="https://www.instagram.com" isExternal>
+        <Link href="https://www.facebook.com" isExternal>
           <Image src={icon2} alt="Instagram" style={iconStyle} />
         </Link>
         <Link href="https://www.twitter.com" isExternal>
