@@ -21,7 +21,6 @@ const getInstagramData = async (): Promise<InstagramDataItem[]> => {
       }
     );
     let res = await response.json();
-    console.log("RES", res);
     
     res = res.data.map((ele: { id: any }) => ele.id);
 
@@ -58,8 +57,6 @@ const getInstagramData = async (): Promise<InstagramDataItem[]> => {
 const InstagramGrid = async() => {
   const data = await getInstagramData()
   
-
-
   const posts = [
     {
       id: 1,
@@ -70,29 +67,29 @@ const InstagramGrid = async() => {
     },
     {
       id: 2,
-      imageUrl: data[0]?.media_url ?? "",
-      media_type: data[0]?.media_type,
+      imageUrl: data[data.length - 2]?.media_url ?? "",
+      media_type: data[data.length - 2]?.media_type,
       caption: "",
       subcaption: "",
     },
     {
       id: 3,
-      imageUrl: data[1]?.media_url ?? "",
-      media_type: data[1]?.media_type,
+      imageUrl: data[data.length - 3]?.media_url ?? "",
+      media_type: data[data.length - 3]?.media_type,
       caption: "",
       subcaption: "",
     },
     {
       id: 4,
-      imageUrl: data[2]?.media_url ?? "",
-      media_type: data[2]?.media_type,
+      imageUrl: data[data.length - 4]?.media_url ?? "",
+      media_type: data[data.length - 4]?.media_type,
       caption: "",
       subcaption: "",
     },
     {
       id: 5,
-      imageUrl: data[3]?.media_url ?? "",
-      media_type: data[3]?.media_type,
+      imageUrl: data[data.length - 5]?.media_url ?? "",
+      media_type: data[data.length - 5]?.media_type,
       caption: "",
       subcaption: "",
     },
