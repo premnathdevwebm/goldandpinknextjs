@@ -55,7 +55,6 @@ async function getInstagramData() {
 const InstagramGrid = async () => {
   let data: InstagramData = await getInstagramData() ?? [];
   data = data.filter(ele=>ele.media_type === "IMAGE")
-  console.log("DATA", data);
   
   const posts = [
     {
