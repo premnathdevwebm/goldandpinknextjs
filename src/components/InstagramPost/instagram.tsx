@@ -75,7 +75,7 @@ const InstagramGrid = async () => {
       <div className={styles.column1}>
         {posts.slice(0, 1).map((post) => (
           <div key={post.id} className={styles.postitem1}>
-            <Link href="https://www.instagram.com">
+            <Link href="https://www.instagram.com/goldandpinkofficial">
               <p className={styles.post1title}>{post.caption}</p>
               <p className={styles.post1subtitle}>{post.subcaption}</p>
               {post.imageUrl && (
