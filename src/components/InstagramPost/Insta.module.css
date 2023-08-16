@@ -59,6 +59,11 @@
   line-height: 1.5rem;
 }
 
+.contenttype{
+  width: 100%;
+  max-height: 250px;
+}
+
 @media (min-width: 768px) {
   .instagramgrid {
     grid-template-columns: 1fr 1fr;
